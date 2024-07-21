@@ -14,14 +14,14 @@ export const Hero = () => {
   };
 
   if (!hero) {
-    return <Navigate to='/marvel' />;
+    return <Navigate to='marvel' />;
   }
 
   return (
     <div className='row mt-5'>
       <div className='col-4'>
         <img
-          src={`/heroes-spa/heroes/${id}.jpg`}
+          src={`/heroes/${id}.jpg`}
           alt={hero.superhero}
           className='img-thumbnail animate__animated animate__fadeInLeft'
         />

@@ -9,7 +9,7 @@ export const Navbar = () => {
   const onLogout = () => {
     logout();
 
-    navigate('/login', {
+    navigate('login', {
       replace: true,
     });
   };
@@ -27,7 +27,7 @@ export const Navbar = () => {
               className={({ isActive }) =>
                 `nav-item nav-link ${isActive ? 'active' : ''}`
               }
-              to='/marvel'
+              to='marvel'
             >
               Marvel
             </NavLink>
@@ -36,7 +36,7 @@ export const Navbar = () => {
               className={({ isActive }) =>
                 `nav-item nav-link ${isActive ? 'active' : ''}`
               }
-              to='/dc'
+              to='dc'
             >
               DC
             </NavLink>
@@ -44,7 +44,7 @@ export const Navbar = () => {
               className={({ isActive }) =>
                 `nav-item nav-link ${isActive ? 'active' : ''}`
               }
-              to='/search'
+              to='search'
             >
               Search
             </NavLink>
