@@ -17,18 +17,18 @@ export const AppRouter = () => {
           }
         /> */}
         <Route
-          path='/heroes-spa/login/*'
+          path='/login/*'
           element={
             <PublicRoute>
               <Routes>
-                <Route path='/heroes-spa/*' element={<Login />} />
+                <Route path='/*' element={<Login />} />
               </Routes>
             </PublicRoute>
           }
         />
         {/* <Route path='login' element={<Login />} /> */}
         <Route
-          path='/heroes-spa/*'
+          path='/*'
           element={
             <PrivateRoute>
               <HeroesRoutes />
