@@ -12,7 +12,7 @@ export const HeroCard = ({
   first_appearance,
   characters,
 }) => {
-  const heroImageUrl = `./heroes/${id}.jpg`;
+  const heroImageUrl = `/heroes-spa/heroes/${id}.jpg`;
   // dev url
   // const heroImageUrl = `/heroes/${id}.jpg`;
 
