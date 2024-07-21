@@ -9,7 +9,7 @@ export const Navbar = () => {
   const onLogout = () => {
     logout();
 
-    navigate('/login', {
+    navigate('/heroes-spa/login', {
       replace: true,
     });
   };
@@ -17,7 +17,7 @@ export const Navbar = () => {
   return (
     <nav className='navbar navbar-expand-sm navbar-dark bg-dark px-4'>
       <div className='container'>
-        <Link className='navbar-brand' to='/'>
+        <Link className='navbar-brand' to='/heroes-spa/'>
           Heores
         </Link>
 
@@ -27,7 +27,7 @@ export const Navbar = () => {
               className={({ isActive }) =>
                 `nav-item nav-link ${isActive ? 'active' : ''}`
               }
-              to='/marvel'
+              to='/heroes-spa/marvel'
             >
               Marvel
             </NavLink>
@@ -36,7 +36,7 @@ export const Navbar = () => {
               className={({ isActive }) =>
                 `nav-item nav-link ${isActive ? 'active' : ''}`
               }
-              to='/dc'
+              to='/heroes-spa/dc'
             >
               DC
             </NavLink>
@@ -44,7 +44,7 @@ export const Navbar = () => {
               className={({ isActive }) =>
                 `nav-item nav-link ${isActive ? 'active' : ''}`
               }
-              to='/search'
+              to='/heroes-spa/search'
             >
               Search
             </NavLink>
