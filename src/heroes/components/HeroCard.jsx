@@ -12,7 +12,9 @@ export const HeroCard = ({
   first_appearance,
   characters,
 }) => {
-  const heroImageUrl = `/heroes/${id}.jpg`;
+  // this is because in Github the root is nicovazquez.com
+  const heroImageUrl = `/heroes-spa/heroes/${id}.jpg`;
+  // const heroImageUrlDev = `/heroes/${id}.jpg`;
 
   return (
     <div className='col animate__animated animate__fadeIn'>
